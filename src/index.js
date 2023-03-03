@@ -13,6 +13,7 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <React.StrictMode>
   <AppProvider>
   <ScrollToTop />
     <BrowserRouter>
@@ -25,5 +26,6 @@ root.render(
       </Routes>
     </BrowserRouter>
   </AppProvider>
+  </React.StrictMode>
 );
 
